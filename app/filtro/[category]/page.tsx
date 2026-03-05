@@ -8,7 +8,7 @@ import { useCategoryStore } from "@/lib/category-store"
 // Esta función se ejecuta en el servidor para generar las páginas estáticas
 export async function generateStaticParams() {
   try {
-    const response = await fetch(`${process.env.NEXTAUTH_URL || 'https://juego-zorro-r9o9xs10h-bxtrl48-gmailcoms-projects.vercel.app'}/api/categories`)
+    const response = await fetch(`${process.env.NEXTAUTH_URL || 'https://juego-zorro-ms3r.vercel.app'}/api/categories`)
     
     if (!response.ok) {
       return []
