@@ -2,11 +2,11 @@
 import mysql from 'mysql2/promise'
 
 const dbConfig = {
-  host: process.env.MYSQL_HOST || 'localhost',
-  port: parseInt(process.env.MYSQL_PORT || '3306'),
-  user: process.env.MYSQL_USER || 'root',
-  password: process.env.MYSQL_PASSWORD || '',
-  database: process.env.MYSQL_DATABASE || 'tienda_juegos',
+  host: process.env.MYSQL_HOST || 'mysql-102ae50e-carocabrandon6-eda5.k.aivencloud.com',
+  port: parseInt(process.env.MYSQL_PORT || '16550'),
+  user: process.env.MYSQL_USER || 'avnadmin',
+  password: process.env.MYSQL_PASSWORD || 'AVNS_zUpbIT5X9x-NIk-OAMg',
+  database: process.env.MYSQL_DATABASE || 'defaultdb',
   waitForConnections: true,
   connectionLimit: 20,
   queueLimit: 0,
